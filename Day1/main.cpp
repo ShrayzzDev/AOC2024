@@ -1,14 +1,12 @@
 #include <iostream>
 #include <list>
 #include <fstream>
-#include <vector>
 #include <string>
 
 using namespace std;
 
 int main()
 {
-    vector<int> test;
     list<int> first, second;
     ifstream file;
     file.open("./dataset.txt");
@@ -21,7 +19,6 @@ int main()
     {
         string line;
         getline(file, line, '\n');
-        // cout << line << endl;
         first.push_front(stoi(line.substr(0, 6)));
         second.push_front(stoi(line.substr(8, 6)));
     }
@@ -34,7 +31,6 @@ int main()
     cout << first.size() << endl;
     while (first_it != first.end() && second_it != second.end())
     {
-        // cout << (*first_it) << " " << (*second_it) << endl;
         total += (abs((*second_it) - (*first_it)));
         ++first_it;
         ++second_it;
