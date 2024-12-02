@@ -1,4 +1,4 @@
-# idk
+# Advent of code 2024
 
 ## Things I (sadly) gave up :
 
