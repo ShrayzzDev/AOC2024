@@ -8,7 +8,8 @@ bool isEqual = false;
 List<IOperator> operators =
 [
     new Addition(),
-    new Multiplication()
+    new Multiplication(),
+    new Concatenation()
 ];
 while(!fstream.EndOfStream)
 {
